@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>TestNG:  NewsRoom Validation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NewsRoom Validation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 10:16:29 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>130 seconds (130192 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.merlin.test.NewsRoomValidationTests.testNewsRoomMostCommentedValidation()'><b>testNewsRoomMostCommentedValidation</b><br>Test class: com.merlin.test.NewsRoomValidationTests<br>Test method: This test scenario validates that home section of News Room  <br/>
+<a href="#Output-1624972302" onClick='toggleBox("Output-1624972302", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1624972302" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1624972302">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully<br/>
+ News Room Tab is present on home Page<br/>
+News Room Tab  is clicked <br/>
+ User taken to News Room Page Successfully <br/>
+Home Tab  is clicked <br/>
+ Validated that Home Tab is Selected <br/>
+ Trending Now Heading validated successfully <br/>
+ Most Commented Heading validated successfully <br/>
+ Most Rated Heading validated successfully <br/>
+ Validated that not more than 5 articles are displayed in Most commented section <br/>
+ Validated that not more than total of 5 articles are displayed in Most Rated section  <br/>
+ Top Stories are displayed <br/>
+ Region heading displayed for region of all Articles<br/>
+ Main Article is displayed for all Regions <br/>
+ Secondary  Articles are displayed for all Regions <br/>
+ Archive Link is  displayed for All Regions  <br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.merlin.test.NewsRoomValidationTests@7ac7a4e4</td></tr>
+<tr>
+<td title='com.merlin.test.NewsRoomValidationTests.testNewsRoomTabsAndSearchValidation()'><b>testNewsRoomTabsAndSearchValidation</b><br>Test class: com.merlin.test.NewsRoomValidationTests<br>Test method: This test scenario validates that search functionality and various tabs of News Room  <br/>
+<a href="#Output-1578587450" onClick='toggleBox("Output-1578587450", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1578587450" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1578587450">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully<br/>
+News Room Tab  is clicked <br/>
+ User taken to News Room Page Successfully <br/>
+Home tab is displayed <br/>
+Awards tab is displayed <br/>
+Movers & Shakers tab is displayed <br/>
+Our results tab is displayed <br/>
+Press releases tab is displayed <br/>
+Winning stories tab is displayed <br/>
+Archive tab is displayed <br/>
+Blogs tab is displayed <br/>
+China entered in Search NewsRoom Text Box <br/>
+Search Button  is clicked <br/>
+User taken to Search Results Page<br/>
+Search Results are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>com.merlin.test.NewsRoomValidationTests@7ac7a4e4</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<html>
+<head>
+<title>TestNG:  Home Page Validation Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Home Page Validation Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 10:08:57 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>452 seconds (452465 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.merlin.test.HomePageValidationTests.testHomePageDisplayValidation()'><b>testHomePageDisplayValidation</b><br>Test class: com.merlin.test.HomePageValidationTests<br>Test method: This test scenario validates that home Page and its various UI elements are displayed properly  <br/>
+<a href="#Output-443934570" onClick='toggleBox("Output-443934570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-443934570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-443934570">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully<br/>
+User taken to Home Page, Home Page is displayed<br/>
+News Carousel Main Section is displayed<br/>
+Additional News Carousel Section is displayed<br/>
+Global News Banner is displayed<br/>
+Regional News Banner is displayed<br/>
+Main Global News is present as link<br/>
+Main Regional News is present as link<br/>
+Additional news section contains total of 4 additional news present as link<br/>
+NEW CTA Section is Present on Home Page<br/>
+NEW CTA Section contains Hotel Performance link titled as Hotel Performance<br/>
+6 Notifications are displayed<br/>
+ Notification Number button 2  is clicked <br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Notification descriptions are not displayed expected [true] but found [false]
+	at com.merlin.test.HomePageValidationTests.testHomePageDisplayValidation(HomePageValidationTests.java:82)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443934570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443934570'><pre>java.lang.AssertionError: Notification descriptions are not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.merlin.test.HomePageValidationTests.testHomePageDisplayValidation(HomePageValidationTests.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>45</td>
+<td>com.merlin.test.HomePageValidationTests@3c756e4d</td></tr>
+<tr>
+<td title='com.merlin.test.HomePageValidationTests.testNotificationsPortletValidation()'><b>testNotificationsPortletValidation</b><br>Test class: com.merlin.test.HomePageValidationTests<br>Test method: This test scenario validates the functionality of Notifications Portlet<br/>
+<a href="#Output-1774720883" onClick='toggleBox("Output-1774720883", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1774720883" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1774720883">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully and taken to home page <br/>
+ Bell Icon is displayed in Notifications Portlet<br/>
+Notification Title is displayed for notification 1<br/>
+Notification Description is displayed for notification 1<br/>
+Notification Image is displayed for notification 1<br/>
+Scroll Button  is clicked <br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Notification title, description and flag not displayed for all notifications expected [true] but found [false]
+	at com.merlin.test.HomePageValidationTests.testNotificationsPortletValidation(HomePageValidationTests.java:264)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774720883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774720883'><pre>java.lang.AssertionError: Notification title, description and flag not displayed for all notifications expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.merlin.test.HomePageValidationTests.testNotificationsPortletValidation(HomePageValidationTests.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>31</td>
+<td>com.merlin.test.HomePageValidationTests@3c756e4d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.merlin.test.HomePageValidationTests.testGlobalNewsArticleValidation()'><b>testGlobalNewsArticleValidation</b><br>Test class: com.merlin.test.HomePageValidationTests<br>Test method: This test scenario validates the look and feel of Global News Article<br/>
+<a href="#Output-1158258131" onClick='toggleBox("Output-1158258131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1158258131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1158258131">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully and taken to Home Page<br/>
+News Carousel Main Section is displayed<br/>
+Additional News Carousel Section is displayed<br/>
+ Verified that Global News is displayed before Regional News<br/>
+ Verified that Articles are displayed in order of most recently published date<br/>
+Mouse hover action performed on Global News Article Image <br/>
+Verified that Mouse Hover over Global news Article display article Content<br/>
+Mouse hover action performed on Global News Article Image <br/>
+Verifed that Overlay content displays count of likes for Global article <br/>
+Mouse hover action performed on Global News Article Image <br/>
+Verified that Overlay content displays count of Comments for Global article <br/>
+Verified that Global News Title does not exceed 60 charcters<br/>
+Verified that Global News Title if exceed 60 characters is followed by ellipses<br/>
+ Global News heading  is clicked <br/>
+ Verified that user taken to the News Article Page on clicking Heading link for Global news<br/>
+ Home Page Logo  is clicked <br/>
+ User taken back to Home Page <br/>
+ Global News Link in overlay  is clicked <br/>
+ Verified that user taken to the News Article Page on clicking overlay title link for global news<br/>
+</div>
+</td>
+<td></td>
+<td>126</td>
+<td>com.merlin.test.HomePageValidationTests@3c756e4d</td></tr>
+<tr>
+<td title='com.merlin.test.HomePageValidationTests.testHotelPerformanceCTAValidation()'><b>testHotelPerformanceCTAValidation</b><br>Test class: com.merlin.test.HomePageValidationTests<br>Test method: This test scenario validates Hotel performance CTA and its Functionality  <br/>
+<a href="#Output-1862383967" onClick='toggleBox("Output-1862383967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1862383967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1862383967">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully and taken to Home Page<br/>
+Hotel Performance CTA  Section is displayed<br/>
+Hotel Performance CTA Section contains Hotel Performance link Titled as Hotel Performance<br/>
+Mouse hover action performed on Hotel Performance Link In CTA Section <br/>
+Mouse hover on Hotel performance link displays the link information<br/>
+ Hotel performance Link  is clicked <br/>
+User taken to Hotel Performance DashBoard Page<br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>com.merlin.test.HomePageValidationTests@3c756e4d</td></tr>
+<tr>
+<td title='com.merlin.test.HomePageValidationTests.testRegionalNewsArticleValidation()'><b>testRegionalNewsArticleValidation</b><br>Test class: com.merlin.test.HomePageValidationTests<br>Test method: This test scenario validates the look and feel of Regional News Article<br/>
+<a href="#Output-1651162064" onClick='toggleBox("Output-1651162064", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1651162064" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1651162064">
+Application launched successfully<br/>
+user1amer entered in  Username Text Box <br/>
+N3wP@ssw0rd!! entered in  Password Text Box <br/>
+AMER selected from  Domain Dropdown <br/>
+ LogIn Button  is clicked <br/>
+User Logged in successfully and taken to Home Page<br/>
+Mouse hover action performed on Regional News Article Image <br/>
+Verifed that Mouse Hover over Regional news Article display article Content<br/>
+Mouse hover action performed on Regional News Article Image <br/>
+Verified that Overlay content displays count of likes for Regional article <br/>
+Mouse hover action performed on Regional News Article Image <br/>
+Verified that Overlay content displays count of Comments for Regional article <br/>
+Verified that Regional News Title does not exceed 60 characters<br/>
+Verified that Regional News Title if exceed 60 characters is followed by ellipses<br/>
+Regional News Heading  is clicked <br/>
+ Verified that user taken to the News Article Page on clicking Heading link for Regional News <br/>
+ Home Page Logo  is clicked <br/>
+ User taken back to Home Page <br/>
+Regional News Link in overlay  is clicked <br/>
+ Verified that user taken to the News Article Page on clicking overlay title link for Regional News <br/>
+</div>
+</td>
+<td></td>
+<td>129</td>
+<td>com.merlin.test.HomePageValidationTests@3c756e4d</td></tr>
+</table><p>
+</body>
+</html>

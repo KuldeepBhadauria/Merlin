@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MERLIN REGRESSION TESTS]">
+  <test name="Application Validation Tests(failed)">
+    <classes>
+      <class name="com.merlin.test.ApplicationsValidationTests">
+        <methods>
+          <include name="testApplicationsHotelUser"/>
+          <include name="launchURLAndLogIn"/>
+          <include name="takeScreenshotOnTestFailure"/>
+        </methods>
+      </class> <!-- com.merlin.test.ApplicationsValidationTests -->
+    </classes>
+  </test> <!-- Application Validation Tests(failed) -->
+</suite> <!-- Failed suite [MERLIN REGRESSION TESTS] -->
